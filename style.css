@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #aa4b6b;
+  background: -webkit-linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b);
+  background: linear-gradient(to bottom, #3b8d99, #6b6b83, #aa4b6b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background: #333;
+  width: calc(18rem + 14px);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.0px);
+  -webkit-backdrop-filter: blur(2.0px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.display {
+  width: 100%;
+  background: transparent;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  z-index: 99;
+  padding: 20px 0;
+}
+
+input[name="current"],
+input[name="last"] {
+  width: 100%;
+  background: transparent;
+  text-align: right;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+input[name="current"] {
+  font-size: 28px;
+}
+
+input[name="current"]::placeholder {
+  color: #78909C;
+}
+
+input[name="last"] {
+  font-size: 14px;
+  color: #78909C;
+  letter-spacing: 2px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+input[type=button] {
+  background: #111;
+  color: #fff;
+  width: 4.5rem;
+  height: 3.5rem;
+  margin: 1px;
+  transition: all 0.1s ease-in-out;
+}
+
+input[type=button].operator {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+input[type=button]:hover,
+input[type=button].operator:hover {
+  background: rgba(20, 20, 20, 0.3);
+  box-shadow: 0 0 2px 0px rgb(255 255 255 / 2);
+}
+
+input[type=button].equal {
+  background: #263238;
+  width: calc(9rem + 2px);
+}
+
+input[type=button].equal:hover {
+  background: #37474F;
+}
